@@ -10,7 +10,7 @@ import random
 
 
 def get_list_from_sql(sql_statement):
-    database = get_sql.runSql(sql_statement, "dbname='pbarna' user='pbarna' host='localhost' password='wolftc?!12'")
+    database = get_sql.runSql(sql_statement, "dbname='pbarna' user='pbarna' host='localhost' password=''")
     c = 0
     printable = []
     for i in database:
