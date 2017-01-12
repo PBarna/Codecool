@@ -43,6 +43,7 @@ def main():
         valar_doheris = comp_name.print_name_list()
         sjwuasmd = dict_sorter.dictionary_sorting(valar_doheris)
         pict_printer.task_first(sjwuasmd)
+        print("\nPICTURE GENERATED\n")
         
     elif number == '2':
         

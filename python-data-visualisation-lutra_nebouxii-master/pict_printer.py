@@ -40,7 +40,7 @@ def task_first(textog):
         res_x = res_x
         res_y = res_y
 
-    img = Image.new("RGB", (res_x, res_y), "blue")
+    img = Image.new("RGB", (res_x, res_y), "grey")
     draw = ImageDraw.Draw(img)
     #   font = ImageFont.truetype(<font-file>, <font-size>)
     text_options = {
@@ -53,10 +53,10 @@ def task_first(textog):
     c = 0    
     for i in textog:
         text_content = (textog[c])
-        font = ImageFont.truetype("Market_Deco.ttf", (c + 1) * 6)
+        font = ImageFont.truetype("ka1.ttf", (c + 1) * 3)
         text_size = draw.textsize(text_content)
         # draw.text((x, y),text_content,(r,g,b))
-        draw.text((c * random.randrange(60), c * random.randrange(60)), text_content, font = font)
+        draw.text((c * random.randrange(60), c * random.randrange(60)), text_content, font = font, fill = (random.randrange(230),random.randrange(230),random.randrange(230),128))
         #draw.text((1, text_size[1]), text_content, font = font)
         #draw.text((text_size[1], 1), text_content, **text_options)
         #draw.text(text_size, text_content, **text_options)
@@ -106,10 +106,10 @@ def task_second(textog):
     for i in textog:
         
         text_content = (textog[c])
-        font = ImageFont.truetype("Market_Deco.ttf", (c + 1) * 6)
+        font = ImageFont.truetype("ka1.ttf", (c + 1) * 3)
         text_size = draw.textsize(text_content)
         # draw.text((x, y),text_content,(r,g,b))
-        draw.text((c * random.randrange(60), c * random.randrange(60)), text_content, font = font)
+        draw.text((c * random.randrange(60), c * random.randrange(60)), text_content, font = font, fill = (random.randrange(230),random.randrange(230),random.randrange(230),128))
         #draw.text((1, text_size[1]), text_content, font = font)
         #draw.text((text_size[1], 1), text_content, **text_options)
         #draw.text(text_size, text_content, **text_options)
