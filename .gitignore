@@ -5,4 +5,8 @@ __pycache__/
 *$py.class
 
 # OS-X
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+>>>>>>> 81b5e528cca703ed95862d8d03a529be7731f876
